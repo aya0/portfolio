@@ -65,7 +65,7 @@ body {
 .mainMenu {
     display: flex;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 100px;
     margin-bottom: 50px;
     position: absolute;
     top: 300px;
@@ -80,9 +80,12 @@ body {
     text-align: center;
 }
 
-.MenuItem a {
+a{
+ text-decoration: none;
+}
+
+a .MenuItem {
     color: white;
-    text-decoration: none;
     font-size: 16px;
 }
 
@@ -106,8 +109,5 @@ body {
 }
 
 .midea .icon {
-    width: 50px;
-    height: 50px;
-    background-color: #262288;
     border-radius: 50%;
 }
