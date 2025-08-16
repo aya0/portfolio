@@ -217,7 +217,7 @@ a .MenuItem {
 
 .mainProjectsContin {
     display: flex;
-    gap :40px;
+    gap :70px;
 }
 
 
@@ -227,7 +227,7 @@ a .MenuItem {
     flex-direction: column;
     width: 400px;
     gap :30px;
-    margin-top: 90px;
+    margin-top: 110px;
 
 }
 
