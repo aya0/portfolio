@@ -118,12 +118,17 @@ a .MenuItem {
 
 
 .PagesTitil {
-    text-align: center;
+    width:400px;
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
     padding: 10px 25px;
     border-radius: 25px;
     background: linear-gradient(to right, #000000, #3a2ce6);
+    position: absolute;
+    right: -60px;
+    top :27px;
+
 }
 
 /* Skills container */
@@ -131,6 +136,7 @@ a .MenuItem {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    margin-top: 100px;;
 }
 
 /* Skill columns */
@@ -159,11 +165,40 @@ a .MenuItem {
     justify-content: center;
 }
 
-/* Skill bar */
-.scall {
-    height: 35px;
-    width: 170px;
-    background-color: #22226b;
-    border-radius: 25px;
+.circle img{
+    width: 50px;
 }
+.scale {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+}
+
+.level {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.low { background: green; }
+.medium { background: orange; }
+.high { background: red; }
+
+/* Current level marker */
+.current-level {
+  position: absolute;
+  top: -5px;           /* slightly above the bar */
+  width: 4px;
+  height: 40px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #000000, #3a2ce6);
+}
+
 
