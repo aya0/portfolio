@@ -5,8 +5,9 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #0a0a0a, #1c1c1c);
     color: white;
-    display: flex;
+    display:flex
 }
+
 
 /* Left Sidebar */
 .leftside {
@@ -19,6 +20,9 @@ body {
     border-radius: 20px;
     margin: 30px;
 }
+
+
+
 
 .leftside .image {
     width: 200px;
@@ -111,3 +115,55 @@ a .MenuItem {
 .midea .icon {
     border-radius: 50%;
 }
+
+
+.PagesTitil {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #000000, #3a2ce6);
+}
+
+/* Skills container */
+.mainSkillsContin {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* Skill columns */
+.firstSkills, .secSkills {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Individual skill item */
+.inContin {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Circle for skill icon */
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #22226b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Skill bar */
+.scall {
+    height: 35px;
+    width: 170px;
+    background-color: #22226b;
+    border-radius: 25px;
+}
+
