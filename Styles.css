@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #0a0a0a, #1c1c1c);
     color: white;
-    display:flex
+    display: flex
 }
 
 
@@ -52,12 +52,12 @@ body {
     flex: 1;
     position: relative;
     padding: 40px;
-    
+
 }
 
 /* Welcome Banner */
 .welcome {
-   
+
     padding: 20px;
     border-radius: 20px;
     text-align: center;
@@ -73,19 +73,19 @@ body {
     margin-bottom: 50px;
     position: absolute;
     top: 300px;
-    left :150px;
+    left: 150px;
 }
 
 .MenuItem {
-    position: relative; 
+    position: relative;
     background: linear-gradient(to right, #000000, #3a2ce6);
     padding: 10px 25px;
     border-radius: 25px;
     text-align: center;
 }
 
-a{
- text-decoration: none;
+a {
+    text-decoration: none;
 }
 
 a .MenuItem {
@@ -99,8 +99,9 @@ a .MenuItem {
 
 
 
-#item2 , #item4{
-   top:80px;
+#item2,
+#item4 {
+    top: 80px;
 }
 
 
@@ -108,8 +109,8 @@ a .MenuItem {
     display: flex;
     position: absolute;
     gap: 20px;
-    bottom: 50px;        
-    right: 80px;  
+    bottom: 50px;
+    right: 80px;
 }
 
 .midea .icon {
@@ -118,7 +119,7 @@ a .MenuItem {
 
 
 .PagesTitil {
-    width:400px;
+    width: 400px;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -127,7 +128,7 @@ a .MenuItem {
     background: linear-gradient(to right, #000000, #3a2ce6);
     position: absolute;
     right: -60px;
-    top :27px;
+    top: 27px;
 
 }
 
@@ -136,13 +137,15 @@ a .MenuItem {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin-top: 100px;;
+    margin-top: 100px;
+    ;
 }
 
 /* Skill columns */
-.firstSkills, .secSkills {
+.firstSkills,
+.secSkills {
     display: flex;
-    flex:1;
+    flex: 1;
     flex-direction: column;
     gap: 25px;
 }
@@ -165,40 +168,103 @@ a .MenuItem {
     justify-content: center;
 }
 
-.circle img{
+.circle img {
     width: 50px;
 }
+
 .scale {
-  position: relative;
-  width: 300px;
-  height: 30px;
-  background: #ddd;
-  border-radius: 15px;
-  overflow: hidden;
-  display: flex;
+    position: relative;
+    width: 300px;
+    height: 30px;
+    background: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
 }
 
 .level {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
 }
 
-.low { background: green; }
-.medium { background: orange; }
-.high { background: red; }
+.low {
+    background: green;
+}
+
+.medium {
+    background: orange;
+}
+
+.high {
+    background: red;
+}
 
 /* Current level marker */
 .current-level {
-  position: absolute;
-  top: -5px;           /* slightly above the bar */
-  width: 4px;
-  height: 40px;
-  border-radius: 25px;
-  background: linear-gradient(to right, #000000, #3a2ce6);
+    position: absolute;
+    top: -5px;
+    /* slightly above the bar */
+    width: 4px;
+    height: 40px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #000000, #3a2ce6);
 }
 
 
+.mainProjectsContin {
+    display: flex;
+    gap :40px;
+}
+
+
+.firstProjects,
+.secProjects {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap :30px;
+    margin-top: 90px;
+
+}
+
+.innerbox {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #000000, #3a2ce6);
+    border-radius: 25px;
+    align-items: center;        
+    justify-content: center; 
+    height: 300px;
+    gap:10px;     
+
+}
+
+ .projectsimage img {
+    width: 350px;
+    height: 200px;
+    border-radius: 25px;
+    
+}
+
+.innerbox .TextDiv{
+    width: 350px;
+    height: 80px;
+    text-align: center;
+}
+
+.firstProjects button,
+.secProjects button {
+    background: linear-gradient(to right, #000000, #3a2ce6);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: auto;
+    width:400px;
+}
