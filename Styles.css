@@ -268,3 +268,65 @@ a .MenuItem {
     margin-top: auto;
     width:400px;
 }
+
+.mainConcteContin{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    gap:30px;
+    margin-top: 80px;
+
+}
+
+
+.outerEmailinfo{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.outerEmailinfo div{
+    border-radius: 25px;
+    background: linear-gradient(to right, #000000, #3a2ce6);
+    width: 130px;
+    height : 20px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.outerEmailinfo input {
+    border-radius: 25px;
+    width: 600px; 
+    font-size: large;
+    background: linear-gradient(to right, #000000, #3a2ce6);
+    color: white;
+    padding: 10px 20px;
+}
+
+.outerEmailinfo textarea{
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 600px;   
+    height: 300px;
+    color: white;
+    font-size: x-large;
+    background: linear-gradient(to right, #000000, #3a2ce6);
+  
+}
+
+.mainConcteContin button{
+    position: absolute;
+    background: linear-gradient(to right, #000000, #3a2ce6);
+    color: white;
+    font-size: larger;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: large;
+    margin-top: auto;
+    width:400px;
+    right :158px;
+    bottom:-50px;
+
+}
