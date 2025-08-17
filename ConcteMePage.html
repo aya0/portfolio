@@ -1,6 +1,6 @@
 <html lang="en">
     <head>
-        <title> Skills Page </title>
+        <title> ConcteMe Page </title>
         <link rel="stylesheet" href="Styles.css">
 
     </head>
@@ -12,30 +12,27 @@
             <button type="submit"> Concte me </button>
         </div>
 
-      <rightside>
-        
+      <div class ="rightside">
         <div class="PagesTitil"> Concte Me  </div>
 
-        <div class="mainConcteContin"> 
+        <form  class="mainConcteContin"  method="post"  action=""> 
           <div class="outerEmailinfo">
             <div> Subject </div>
-            <input>
+            <input type="text" name="SubjectInput" placeholder="Enter Subject" required>
           </div>
-
           <div class="outerEmailinfo">
             <div> From </div>
-            <input>
+            <input type="text" name="FromInput" placeholder="Enter Your Email" required>
           </div>
-
-
           <div class="outerEmailinfo">
             <div> Message </div>
-            <textarea> </textarea>
+            <textarea name="MessageInput" placeholder="Enter your Message " required> </textarea>
           </div>
 
           <button type="submit"> Send Email </button>
-      
-       </rightside>
+        </form >
+
+        </div>
 
     </body>
 
