@@ -1,40 +1,64 @@
 <html lang="en">
-    <head>
-        <title> ConcteMe Page </title>
-        <link rel="stylesheet" href="Styles.css">
 
-    </head>
-    <body>
+<head>
+  <title> ConcteMe Page </title>
+  <link rel="stylesheet" href="Styles.css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("S7xWmxbGmmuqRkryz"); // Get this from EmailJS dashboard
+    })();
+  </script>
 
-        <div class="leftside"> 
-            <div class="image"> <img src="" width=" " > </div>
-            <div class="persInfo"> Software Eng | BackEnd Devloper | Database Adminstator  </div>
-            <button type="submit"> Concte me </button>
-        </div>
 
-      <div class ="rightside">
-        <div class="PagesTitil"> Concte Me  </div>
+</head>
 
-        <form  class="mainConcteContin"  method="post"  action=""> 
-          <div class="outerEmailinfo">
-            <div> Subject </div>
-            <input type="text" name="SubjectInput" placeholder="Enter Subject" required>
-          </div>
-          <div class="outerEmailinfo">
-            <div> From </div>
-            <input type="text" name="FromInput" placeholder="Enter Your Email" required>
-          </div>
-          <div class="outerEmailinfo">
-            <div> Message </div>
-            <textarea name="MessageInput" placeholder="Enter your Message " required> </textarea>
-          </div>
+<body>
 
-          <button type="submit"> Send Email </button>
-        </form >
+  <div class="leftside">
+    <div class="image"> <img src="" width=" "> </div>
+    <div class="persInfo"> Software Eng | BackEnd Devloper | Database Adminstator </div>
+    <button type="submit"> Concte me </button>
+  </div>
 
-        </div>
+  <div class="rightside">
+    <div class="PagesTitil"> Concte Me </div>
 
-    </body>
+    <form class="mainConcteContin" id ="mainConcteContin" >
+      <div class="outerEmailinfo">
+        <div> Subject </div>
+        <input type="text" name="Subject" placeholder="Enter Subject" required>
+      </div>
+      <div class="outerEmailinfo">
+        <div> From </div>
+        <input type="text" name="From" placeholder="Enter Your Email" required>
+      </div>
+      <div class="outerEmailinfo">
+        <div> Message </div>
+        <textarea name="message" placeholder="Enter your Message " required> </textarea>
+      </div>
+      <button type="submit"> Send Email </button>
+    </form>
+
+<script>
+  document.getElementById('mainConcteContin').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Send form data using EmailJS
+    emailjs.sendForm('service_aebglkd', 'template_lzp3ytn', this)
+      .then(() => {
+        alert("Email sent successfully!");
+      }, (err) => {
+        console.error("Error:", err);
+        alert("Oops! Something went wrong.");
+      });
+  });
+</script>
+
+
+  </div>
+
+</body>
 
 
 </html>
