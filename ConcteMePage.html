@@ -3,13 +3,12 @@
 <head>
   <title> ConcteMe Page </title>
   <link rel="stylesheet" href="Styles.css">
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
       emailjs.init("S7xWmxbGmmuqRkryz"); // Get this from EmailJS dashboard
     })();
   </script>
-
 
 </head>
 
@@ -18,13 +17,17 @@
   <div class="leftside">
     <div class="image"> <img src="" width=" "> </div>
     <div class="persInfo"> Software Eng | BackEnd Devloper | Database Adminstator </div>
-    <button type="submit"> Concte me </button>
+    <button type="button"> Concte me </button>
   </div>
 
   <div class="rightside">
     <div class="PagesTitil"> Concte Me </div>
 
-    <form class="mainConcteContin" id ="mainConcteContin" >
+    <form class="mainConcteContin" id="mainConcteContin">
+      <div class="outerEmailinfo">
+        <div> Name </div>
+        <input type="text" name="name" placeholder="Enter Your Name" required>
+      </div>
       <div class="outerEmailinfo">
         <div> Subject </div>
         <input type="text" name="Subject" placeholder="Enter Subject" required>
@@ -40,20 +43,23 @@
       <button type="submit"> Send Email </button>
     </form>
 
-<script>
-  document.getElementById('mainConcteContin').addEventListener('submit', function(e) {
-    e.preventDefault();
+    <script>
 
-    // Send form data using EmailJS
-    emailjs.sendForm('service_aebglkd', 'template_lzp3ytn', this)
-      .then(() => {
-        alert("Email sent successfully!");
-      }, (err) => {
-        console.error("Error:", err);
-        alert("Oops! Something went wrong.");
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById('mainConcteContin').addEventListener('submit', function (e) {
+          e.preventDefault();
+          console.log("Form submitted!"); // debug
+
+          emailjs.sendForm('service_aebglkd', 'template_lzp3ytn', this)
+            .then(() => {
+              alert("Email sent successfully!");
+            }, (err) => {
+              console.error("Error:", err);
+              alert("Oops! Something went wrong.");
+            });
+        });
       });
-  });
-</script>
+    </script>
 
 
   </div>
